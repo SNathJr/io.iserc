@@ -16,14 +16,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
+    
     <!-- Navbar -->
-    <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+    <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <div class="container">
+      <a class="navbar-brand" href="#home">
         <img src="img/io_icon.png" width="30" height="30" alt="IO icon">
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,17 +45,31 @@
           </li>
         </ul>
       </div>
-      <a class="navbar-brand float-right hidden-sm-down mr-0" href="www.iserc.cf">
+      <a class="navbar-brand float-right hidden-sm-down m-0" href="http://www.iserc.cf">
         <p>Presented by ISERC</p>
       </a>
-    </nav>
-    <!-- /Navbar-->
-    
-    
-    
-    <div class="container pt-3"> <!-- container-->
+      </div>
+    </nav>   <!-- /Navbar-->
+
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-info">
+      <div class="container text-white text-sm-center mt-3 pt-3">
+	<h1 class="display-3">This is ISERC  <small>I/O <br>2017</small>.</h1>
+	<p class="lead">Meet us at ISERC Seminar Hall on 29th August.</p>
       
-      <h1 class="display-4 mb-2"> This is ISERC I/O. </h1>
+	<div class="btn-group mt-2" role="group">
+	  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
+	 <!-- <button type="button" class="btn btn-secondary btn-lg">Speakers</button> -->
+	  <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
+	</div>
+      </div>
+    </div>    <!-- /jumbotron -->
+    
+    <!-- main container-->
+    <div class="container pt-3"> 
+      
+      <h2 class="mb-2"> About ISERC I/O </h2>
       <p class="text-justify">ISERC I/O is a monthly seminar hosted by students of ISERC with a main goal of providing a platform for students to present and exchange their summer research experiences and to participate in an engaging and probative discussion of the ideas presented. In this event, students of ISERC are fully commited to ISERC I/O as a mean to share knowledge and bring new approaches to advancing enterpreneurship in science and research.</p>
       
       <h2 class="display-4 text-center text-muted my-2"> Speakers </h2>
@@ -68,10 +85,12 @@
       <div class="row">
         <div class=" col-md-6 col-xl-5">
           <h3 class="text-muted"> Be a Coordinator </h3>
+	  <p class="text-justify"> [ be a coordinator here. benefits of being a  coordinator. link to registration form. should take to same page with both coordinator and speaker registration. maximum numbers of coordinators must not exceed a group of two people.]</p>
         </div>
         
         <div class="col-md-6 col-xl-5 offset-xl-2">
           <h3 class="text-muted"> Be a Speaker</h3>
+	  <p class="text-justify"> [ be a speaker here. benefits of being a speaker. link to registration page. should take to same page with both speaker and coordinatior registration. maximum numbers of speakers must not exceed four people.]</p>
         </div>
       </div>
       
@@ -80,7 +99,7 @@
         <div class="row py-2 text-muted">
           <div class="col-md-6 col-xl-5">
             <p><strong>About ISERC</strong></p>
-            <p>ISERC is Integrated Science Education and Research Center situated at Visva-Bharati University, Santiniketan.</p>
+            <p class="text-justify">ISERC is Integrated Science Education and Research Center situated at Visva-Bharati University, Santiniketan.</p>
           </div>
           <div class="col-md-6 col-xl-5 offset-xl-2">
             <p><strong>Stay up-to-date on ISERC I/O</strong></p>
@@ -94,7 +113,7 @@
       </div>
       <hr> <!-- /.signup form-->
       
-    </div> <!-- /.container-->
+    </div> <!-- /main container-->
     
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
