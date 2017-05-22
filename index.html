@@ -26,8 +26,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="container">
-      <a class="navbar-brand" href="#home">
-        <img src="img/io_icon.png" width="30" height="30" alt="IO icon">
+      <a class="navbar-brand hidden-sm-down" href="#home">
+        <img src="img/favicon.png" width="40" height="30" alt="IO icon">
+      </a>
+        <a class="navbar-brand hidden-md-up" href="#home">
+        <img src="img/iserc_io.png" width="170" height="35" alt="IO icon">
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav">
@@ -35,11 +38,11 @@
             <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#speakers">Speakers</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#schedule">Schedule</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#speakers">Speakers</a>
+          </li>          
           <li class="nav-item">
             <a class="nav-link" href="#getinvolved">Get Involved</a>
           </li>
@@ -55,42 +58,128 @@
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-info">
       <div class="container text-white text-sm-center mt-3 pt-3">
-	<h1 class="display-3">This is ISERC  <small>I/O <br>2017</small>.</h1>
-	<p class="lead">Meet us at ISERC Seminar Hall on 27th August.</p>
-      
-	<div class="btn-group mt-2" role="group">
-	  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
-	 <!-- <button type="button" class="btn btn-secondary btn-lg">Speakers</button> -->
-	  <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
-	</div>
+        <h1 class="display-3">This is ISERC  <small>I/O <br>2017</small>.</h1>
+        <p class="lead">Meet us at ISERC Seminar Hall on 27th August.</p>
+        <div class="btn-group mt-2" role="group">
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registernow">Register Now</button>
+         <!-- <button type="button" class="btn btn-secondary btn-lg">Speakers</button> -->
+          <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
+        </div>
       </div>
     </div>    <!-- /jumbotron -->
     
     <!-- main container-->
-    <div class="container pt-3"> 
-      
+    <div class="container pt-3">   
       <h2 class="mb-2"> About ISERC I/O </h2>
       <p class="text-justify">ISERC I/O is a monthly seminar hosted by students of ISERC with a main goal of providing a platform for students to present and exchange their summer research experiences and to participate in an engaging and probative discussion of the ideas presented. In this event, students of ISERC are fully commited to ISERC I/O as a mean to share knowledge and bring new approaches to advancing enterpreneurship in science and research.</p>
       
-      <h2 class="display-4 text-center text-muted my-2"> Speakers </h2>
-      
-      [speakers profile here]
-      
+      <!--  Schedule-->
       <h2 class="display-4 text-center text-muted my-2"> Schedule </h2>
+      <ul class="list-group my-4">
+        <li class="list-group-item list-group-item-info justify-content-between">
+          <h5 class="mb-1">List group item heading topic title here, long line.</h5>
+          <p class="mb-1">Name of Speaker</p>
+          <h5><span class="badge badge-primary badge-pill">03:45 PM</span></h5>
+        </li>
+        <li class="list-group-item list-group-item-success justify-content-between">
+          <h5 class="mb-1">List group item heading topic title here, long line.</h5>
+          <p class="mb-1">Name of Speaker</p>
+          <h5><span class="badge badge-primary badge-pill">03:45 PM</span></h5>
+        </li>
+        <li class="list-group-item list-group-item-info justify-content-between">
+          <h5 class="mb-1">List group item heading topic title here, long line.</h5>
+          <p class="mb-1">Name of Speaker</p>
+          <h5><span class="badge badge-primary badge-pill">03:45 PM</span></h5>
+        </li>
+        <li class="list-group-item list-group-item-success justify-content-between">
+          <h5 class="mb-1">List group item heading topic title here, long line.</h5>
+          <p class="mb-1">Name of Speaker</p>
+          <h5><span class="badge badge-primary badge-pill">03:45 PM</span></h5>
+        </li>
+        <li class="list-group-item list-group-item-info justify-content-between">
+          <h5 class="mb-1">List group item heading topic title here, long line.</h5>
+          <p class="mb-1">Name of Speaker</p>
+          <h5><span class="badge badge-primary badge-pill">03:45 PM</span></h5>
+        </li>
+      </ul>
       
-      [schedule here]
+      <!--  Speakers -->
+      <h2 class="display-4 text-center text-muted my-2" id="speakers"> Speakers </h2>
+      <div class="row text-center my-4">
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card">
+            <img class="card-img-top" src="img/350x200.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Speaker Name</h4>
+              <p class="card-text text-justify">Speaker Name works in Plasma Physics and related research topics. Apart form Physics he loves web developement and design. He is passionate about developing and designing codes that solve real world problems!</p>
+<!--              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card">
+            <img class="card-img-top" src="img/350x200.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Speaker Name</h4>
+              <p class="card-text text-justify">Speaker Name works in Plasma Physics and related research topics. Apart form Physics he loves web developement and design. He is passionate about developing and designing codes that solve real world problems!</p>
+<!--              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card">
+            <img class="card-img-top" src="img/350x200.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Speaker Name</h4>
+              <p class="card-text text-justify">Speaker Name works in Plasma Physics and related research topics. Apart form Physics he loves web developement and design. He is passionate about developing and designing codes that solve real world problems!</p>
+<!--              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card">
+            <img class="card-img-top" src="img/350x200.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Speaker Name</h4>
+              <p class="card-text text-justify">Speaker Name works in Plasma Physics and related research topics. Apart form Physics he loves web developement and design. He is passionate about developing and designing codes that solve real world problems!</p>
+<!--              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card">
+            <img class="card-img-top" src="img/350x200.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Speaker Name</h4>
+              <p class="card-text text-justify">Speaker Name works in Plasma Physics and related research topics. Apart form Physics he loves web developement and design. He is passionate about developing and designing codes that solve real world problems!</p>
+<!--              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-2">
+          <div class="card">
+            <img class="card-img-top" src="img/350x200.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Speaker Name</h4>
+              <p class="card-text text-justify">Speaker Name works in Plasma Physics and related research topics. Apart form Physics he loves web developement and design. He is passionate about developing and designing codes that solve real world problems!</p>
+<!--              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+        </div> 
+      </div>
       
+      <!-- Get Involved -->
       <h2 class="display-4 text-center text-muted my-2"> Get Involved </h2>
-      
       <div class="row">
         <div class=" col-md-6 col-xl-5">
           <h3 class="text-muted"> Be a Coordinator </h3>
-	  <p class="text-justify"> [ be a coordinator here. benefits of being a  coordinator. link to registration form. should take to same page with both coordinator and speaker registration. maximum numbers of coordinators must not exceed a group of two people.]</p>
+	       <p class="text-justify"> [ be a coordinator here. benefits of being a  coordinator. link to registration form. should take to same page with both coordinator and speaker registration. maximum numbers of coordinators must not exceed a group of two people.]</p>
+          <button type="button" class="btn btn-outline-info btn-lg">Register as a Coordinator</button>
         </div>
-        
         <div class="col-md-6 col-xl-5 offset-xl-2">
           <h3 class="text-muted"> Be a Speaker</h3>
-	  <p class="text-justify"> [ be a speaker here. benefits of being a speaker. link to registration page. should take to same page with both speaker and coordinatior registration. maximum numbers of speakers must not exceed four people.]</p>
+	      <p class="text-justify"> [ be a speaker here. benefits of being a speaker. link to registration page. should take to same page with both speaker and coordinatior registration. maximum numbers of speakers must not exceed four people.]</p>
+          <button type="button" class="btn btn-outline-info btn-lg">Register as a Speaker</button>
         </div>
       </div>
       
@@ -113,9 +202,43 @@
       </div>
       <hr> <!-- /.signup form-->
       
+      <!--  footer  -->
+      <div class="row py-1">
+        <div class="col-md-7">
+          <small> Site made by Swastik Nath, Team Codeon; Using Bootstrap v4 alpha6.</small>
+        </div>
+        <div class="col-md-5 text-right">
+          <small>&copy; 2017 ISERC I/O &amp; ISERC </small>
+        </div>
+      </div>
+      
     </div> <!-- /main container-->
     
-
+    <!--==========================================
+            FORM MODAL
+    ============================================-->
+    
+    <div id="registernow" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Register Now</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Registration Form goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scripts -->
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-3.1.1.slim.min.js"></script>
     <script src="js/tether.min.js"></script>
