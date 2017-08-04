@@ -48,7 +48,7 @@
           </li>
         </ul>
       </div>
-      <a class="navbar-brand float-right hidden-sm-down m-0" href="http://www.iserc.cf">
+      <a class="navbar-brand float-right hidden-sm-down m-0" href="http://www.iserc.cf" target="_blank">
         <p>Presented by ISERC</p>
       </a>
       </div>
@@ -205,7 +205,7 @@
       <!--  footer  -->
       <div class="row py-1">
         <div class="col-md-7">
-          <small> Site made by Swastik Nath, Team Codeon; Using Bootstrap v4 alpha6.</small>
+          <small> Site design by Swastik Nath, Team CodeOn; Using Bootstrap v4 alpha6.</small>
         </div>
         <div class="col-md-5 text-right">
           <small>&copy; 2017 ISERC I/O &amp; ISERC </small>
@@ -221,18 +221,49 @@
     <div id="registernow" class="modal fade">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Register Now</h5>
+          <div class="modal-header bg-info text-white rounded-top">
+            <h4 class="modal-title">Register as a Speaker</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>Registration Form goes here.</p>
+            <!--  Registration Form  -->
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong>Heads up!</strong> You are signing up as a speaker for ISERC I/O to be held on <strong>27th August, 2017</strong>.
+            </div>
+            <form>
+              <h5 class="mb-2">Basic Info</h5>
+              <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" class="form-control" id="email" placeholder="yourname@example.com">
+              </div>
+              <div class="form-group">
+                <label for="status">Academic Status:</label>
+                <select class="form-control" id="status" name="academic_status">
+                  <option value="ISERC 1st Year">1st Year in Int. M.Sc at ISERC</option>
+                  <option value="ISERC 2nd Year">2nd Year in Int. M.Sc at ISERC</option>
+                  <option value="ISERC 3rd Year">3rd Year in Int. M.Sc at ISERC</option>
+                  <option value="ISERC 4th Year">4th Year in Int. M.Sc at ISERC</option>
+                  <option value="ISERC 5th Year">5th Year in Int. M.Sc at ISERC</option>
+                  <option value="Outside ISERC">I am a student outside ISERC</option>
+                </select>
+              </div>
+              
+              <hr class="my-2">
+              <h5>About your talk</h5>
+            </form> <!--  /Registration Form -->
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Register</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
