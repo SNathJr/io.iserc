@@ -217,57 +217,85 @@
     <!--==========================================
             FORM MODAL
     ============================================-->
-    
-    <div id="registernow" class="modal fade">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header bg-info text-white rounded-top">
-            <h4 class="modal-title">Register as a Speaker</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!--  Registration Form  -->
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <form>
+      <div id="registernow" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-info text-white rounded-top">
+              <h4 class="modal-title">Register as a Speaker</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <strong>Heads up!</strong> You are signing up as a speaker for ISERC I/O to be held on <strong>27th August, 2017</strong>.
             </div>
-            <form>
-              <h5 class="mb-2">Basic Info</h5>
-              <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            <div class="modal-body">
+              <!--  Registration Form  -->
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Heads up!</strong> You are signing up as a speaker for ISERC I/O to be held on <strong>27th August, 2017</strong>.
               </div>
-              <div class="form-group">
-                <label for="email">Email ID:</label>
-                <input type="email" class="form-control" id="email" placeholder="yourname@example.com">
-              </div>
-              <div class="form-group">
-                <label for="status">Academic Status:</label>
-                <select class="form-control" id="status" name="academic_status">
-                  <option value="ISERC 1st Year">1st Year in Int. M.Sc at ISERC</option>
-                  <option value="ISERC 2nd Year">2nd Year in Int. M.Sc at ISERC</option>
-                  <option value="ISERC 3rd Year">3rd Year in Int. M.Sc at ISERC</option>
-                  <option value="ISERC 4th Year">4th Year in Int. M.Sc at ISERC</option>
-                  <option value="ISERC 5th Year">5th Year in Int. M.Sc at ISERC</option>
-                  <option value="Outside ISERC">I am a student outside ISERC</option>
-                </select>
-              </div>
-              
-              <hr class="my-2">
-              <h5>About your talk</h5>
-            </form> <!--  /Registration Form -->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Register</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <div class="form-group">
+                  <label for="name">Your Name: *</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email ID: *</label>
+                  <input type="email" class="form-control" id="email" placeholder="yourname@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="status">Academic Status:</label>
+                  <select class="form-control" id="status" name="academic_status">
+                    <option value="">-- Choose --</option>
+                    <option value="ISERC 1st Year">1st Year in Int. M.Sc at ISERC</option>
+                    <option value="ISERC 2nd Year">2nd Year in Int. M.Sc at ISERC</option>
+                    <option value="ISERC 3rd Year">3rd Year in Int. M.Sc at ISERC</option>
+                    <option value="ISERC 4th Year">4th Year in Int. M.Sc at ISERC</option>
+                    <option value="ISERC 5th Year">5th Year in Int. M.Sc at ISERC</option>
+                    <option value="Outside ISERC">I am a student outside ISERC</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="link"> Upload Your Photo:</label>
+                  <input type="text" class="form-control" id="link" placeholder="Share the link to your photo on Google Drive.">
+                </div>
+                <div class="form-group">
+                  <label for="bio">About Yourself:</label>
+                  <textarea class="form-control" id="bio" rows="3" placeholder="A short Bio describing yourself with about 20-30 words."></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="title">Title of your Talk: *</label>
+                  <input type="text" class="form-control" id="title" placeholder="Give the title of your talk." required>
+                </div>
+                <div class="form-group">
+                  <label for="abstract">Abstract of your Talk:</label>
+                  <textarea class="form-control" id="abstract" rows="5" placeholder="Your session abstract will tell Conference Attendees why they should attend your session. To be effective and create interest, it should provide a brief, clear, and concise reflection of your presentation’s content. The abstract should only be one paragraph of between 100 to 250 words in length."></textarea>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" onchange="document.getElementById('partner').disabled = !this.checked;" name='visto' id='visto'/>
+                    I have partnered with another speaker.
+                  </label>
+                  <div class="form-group">
+                    <label for="name2">Partner's Name:</label>
+                    <input type="text" class="form-control" id="name2" placeholder="Leave blank if not applicable.">
+                  </div>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" required="true">
+                    I have verified that all information provided here is accurate and complete. *
+                  </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Register</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </form> <!-- /Registration Form -->
     
     <!-- Scripts -->
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
