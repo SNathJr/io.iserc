@@ -56,7 +56,7 @@
 
 
     <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid bg-info" id="home">
+    <div class="jumbotron jumbotron-fluid bg-info">
       <div class="container text-white text-sm-center mt-3 pt-3">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -75,28 +75,50 @@
     </div>    <!-- /jumbotron -->
 
     <!-- main container-->
-    <div class="container pt-3">
+    <div class="container pt-3" id="main-container">
       <h2 class="mb-2"> About ISERC I/O </h2>
       <p class="text-justify">ISERC I/O is a monthly seminar hosted by students of ISERC with a main goal of providing a platform for students to present and exchange their summer research experiences and to participate in an engaging and probative discussion of the ideas presented. In this event, students of ISERC are fully commited to ISERC I/O as a mean to share knowledge and bring new approaches to advancing enterpreneurship in science and research.</p>
 
       <!--  Schedule-->
       <h2 class="display-4 text-center text-muted my-2" id="schedule"> Schedule </h2>
       <ul class="list-group my-4">
-        <li class="list-group-item list-group-item-info justify-content-between">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 list-group-item-heading">Why don't you? </h5><br />
-          </div>
-          <p class="mb-1">Speaker: Prabhat Bhat</p>
-          <h5><span class="badge badge-primary badge-pill">03:45 - 04:00 PM</span></h5>
 
-        </li>
-        <li class="list-group-item list-group-item-warning justify-content-between">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 list-group-item-heading">Title of the talk goes here.</h5>
+        <!--visible element-->
+        <a data-toggle="collapse" href="#abstract1" aria-expanded="false" aria-controls="abstract1">
+          <li class="list-group-item list-group-item-info justify-content-between">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 list-group-item-heading">Why don't you? </h5><br />
+            </div>
+            <p class="mb-1">Speaker: Prabhat Bhat</p>
+            <h5><span class="badge badge-primary badge-pill">03:45 - 04:00 PM</span></h5>
+          </li>
+        </a>
+        <!--togglable abstract element-->
+        <div class="collapse" id="abstract1">
+          <div class="card card-body px-4">
+            <h5> Abstract: </h5>
+            A talk which will open your eyes and your prospect about yourself, for an overall development Sometimes we get too comfortable in a situation and hence forget to do the necessary. At that time we need a good whack on the head to pull us out back to reality. So it's NOT about why you should or why you shouldn't, it's about WHY DON'T YOU?
           </div>
-          <p class="mb-1">Speaker: Speaker Name</p>
-          <h5><span class="badge badge-primary badge-pill">04:00 - 04:15 PM</span></h5>
-        </li>
+        </div>
+
+        <!--visible element-->
+        <a data-toggle="collapse" href="#abstract2" aria-expanded="false" aria-controls="abstract2">
+          <li class="list-group-item list-group-item-warning justify-content-between">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 list-group-item-heading">Title of the talk goes here.</h5>
+            </div>
+            <p class="mb-1">Speaker: Speaker Name</p>
+            <h5><span class="badge badge-primary badge-pill">04:00 - 04:15 PM</span></h5>
+          </li>
+        </a>
+        <!--togglable abstract element-->
+        <div class="collapse" id="abstract2">
+          <div class="card card-body px-4">
+            <h5> Abstract: </h5>
+            This project involves discovering how the Indian Revolution was remembered during the nineteenth century. The goal is to show that the Indian Revolution was memorialized by the actions of the British government during the 1800 - 1900s. This has been done by examining events such as the Supreme Court cases of John Marshall and the Nullification Crisis.
+          </div>
+        </div>
+
         <li class="list-group-item list-group-item-success justify-content-between">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1 list-group-item-heading">Tea Break</h5>
@@ -104,21 +126,44 @@
           <span class="mb-1">Free Tea for all :)</span>
           <h5><span class="badge badge-success badge-pill">04:15 - 4:30 PM</span></h5>
         </li>
-        <li class="list-group-item list-group-item-warning justify-content-between">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 list-group-item-heading">Title of the talk goes here.</h5>
+
+        <!--visible element-->
+        <a data-toggle="collapse" href="#abstract3" aria-expanded="false" aria-controls="abstract3">
+          <li class="list-group-item list-group-item-warning justify-content-between">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 list-group-item-heading">Title of the talk goes here.</h5>
+            </div>
+            <p class="mb-1">Speaker: Speaker Name</p>
+            <h5><span class="badge badge-primary badge-pill">04:30 - 04:45 PM</span></h5>
+          </li>
+        </a>
+        <!--togglable abstract element-->
+        <div class="collapse" id="abstract3">
+          <div class="card card-body px-4">
+            <h5> Abstract: </h5>
+            This project involves discovering how the Indian Revolution was remembered during the nineteenth century. The goal is to show that the Indian Revolution was memorialized by the actions of the British government during the 1800 - 1900s. This has been done by examining events such as the Supreme Court cases of John Marshall and the Nullification Crisis.
           </div>
-          <p class="mb-1">Speaker: Speaker Name</p>
-          <h5><span class="badge badge-primary badge-pill">04:30 - 04:45 PM</span></h5>
-        </li>
-        <li class="list-group-item list-group-item-info justify-content-between">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 list-group-item-heading">Title of the talk goes here.</h5><br />
+        </div>
+
+        <!--visible element-->
+        <a data-toggle="collapse" href="#abstract4" aria-expanded="false" aria-controls="abstract4">
+          <li class="list-group-item list-group-item-info justify-content-between">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 list-group-item-heading">Title of the talk goes here.</h5><br />
+            </div>
+            <p class="mb-1">Speaker: Speaker Name</p>
+            <h5><span class="badge badge-primary badge-pill">04:45 - 05:00 PM</span></h5>
+          </li>
+        </a>
+        <!--togglable abstract element-->
+        <div class="collapse" id="abstract4">
+          <div class="card card-body px-4">
+            <h5> Abstract: </h5>
+            This project involves discovering how the Indian Revolution was remembered during the nineteenth century. The goal is to show that the Indian Revolution was memorialized by the actions of the British government during the 1800 - 1900s. This has been done by examining events such as the Supreme Court cases of John Marshall and the Nullification Crisis.
           </div>
-          <p class="mb-1">Speaker: Speaker Name</p>
-          <h5><span class="badge badge-primary badge-pill">04:45 - 05:00 PM</span></h5>
-        </li>
+        </div>
       </ul>
+
 
       <!--  Speakers -->
       <h2 class="display-4 text-center text-muted my-2" id="speakers"> Speakers </h2>

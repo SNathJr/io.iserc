@@ -14,3 +14,10 @@
 .active {
     transition: .4s;
 }
+
+#main-container .list-group a:hover,
+#main-container .list-group a:visited,
+#main-container .list-group a:active,
+#main-container .list-group a:focus {
+    text-decoration: none;
+}
